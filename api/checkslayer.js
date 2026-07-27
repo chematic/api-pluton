@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
     try {
         const response = await fetch(
-            "https://raw.githubusercontent.com/chematic/storage/refs/heads/main/api/v1/checkslayer.txt"
+            "https://raw.githubusercontent.com/chematic/api-pluton/refs/heads/main/api/checkslayer.txt"
         )
         
         if (!response.ok) {
