@@ -12,6 +12,10 @@
     {
       "source": "/checkslayer",
       "destination": "/api/checkslayer"
+    },
+    {
+      "source": "/mojavevalley",
+      "destination": "/api/mojavevalley"
     }
   ]
 }
