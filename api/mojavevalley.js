@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     }
 
     const response = await fetch(
-        "https://raw.githubusercontent.com/chematic/storage/main/api/v1/ninjatycoonhub.luau"
+        "https://raw.githubusercontent.com/chematic/storage/refs/heads/main/api/v1/mojavevalleyhub.luau"
     )
 
     const script = await response.text()
