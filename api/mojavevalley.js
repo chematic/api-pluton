@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-    if (req.headers.auth !== "azuontop") {
+    if (req.headers.auth !== "@vhb7") {
         return res.status(403).send("Forbidden")
     }
 
