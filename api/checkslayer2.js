@@ -1,0 +1,18 @@
+export default async function handler(req, res) {
+    try {
+        const response = await fetch(
+            "https://raw.githubusercontent.com/chematic/api-pluton/refs/heads/main/api/checking/checkslayer2.txt"
+        )
+        
+        if (!response.ok) {
+            return res.status(500).send("OFF")
+        }
+
+        const status = await response.text()
+
+        res.setHeader("Content-Type", "text/plain")
+        res.status(200).send(status.trim())
+    } catch (error) {
+        res.status(500).send("OFF")
+    }
+}
