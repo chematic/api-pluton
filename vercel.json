@@ -18,6 +18,10 @@
       "destination": "/api/checkslayer"
     },
     {
+      "source": "/animeabilityarena",
+      "destination": "/api/animeabilityarena"
+    },   
+    {
       "source": "/checkslayer2",
       "destination": "/api/checkslayer2"
     },
