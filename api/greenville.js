@@ -1,0 +1,14 @@
+export default async function handler(req, res) {
+    if (req.headers.auth !== "@azunoo") {
+        return res.status(403).send("Forbidden")
+    }
+
+    const response = await fetch(
+        "https://raw.githubusercontent.com/chematic/storage/refs/heads/main/api/v1/GreenvilleRework.lua"
+    )
+
+    const script = await response.text()
+
+    res.setHeader("Content-Type", "text/plain")
+    res.send(script)
+}
