@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-    if (req.headers.auth !== "@theuniqueleader") {
+    if (req.headers.auth !== "@azunoo") {
         return res.status(403).send("Forbidden")
     }
 
